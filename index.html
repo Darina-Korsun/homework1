@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Trying out geochart-->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Visiting frequency per decade'],
+          ['Ukraine', 20],
+          ['Spain', 10],
+          ['Ireland', 15],
+          ['Greece', 12],
+         
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+<!--Trying out geochart-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Darina Korsun</h1>
+    <hr>
+    <!-- Would use align= "left" usually to float text around image, but this is very chunky so trying out style="float:left; margin-right: 10px; margin-bottom: 5px; border: solid black 1px; padding: 2px"-->
+    <img width= "220" height= "400" src="CVimages/photo.jpg" alt="CV photograph" style="float:left; margin-right: 10px; margin-bottom: 5px; border: solid black 1px; padding: 2px"/>
+
+ <h2>Biologist</h2>
+ <h3><a href="https://www.gla.ac.uk">University of Glasgow</a></h3>
+ <p><strong>MSc Cardiovascular Sciences, <em>2012-2016</em></strong></p>
+ <p><strong>BSc Physiology, <em>2012-2016</em></strong></p>
+ <a href= "about.html">Find out more about me.</a>
+
+<hr>
+<h3><em>Introduction</em></h3>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, ducimus numquam expedita quos dolore quia cupiditate corporis suscipit commodi temporibus quidem aut vero eos iusto optio explicabo autem in incidunt.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, ducimus numquam expedita quos dolore quia cupiditate corporis suscipit commodi temporibus quidem aut vero eos iusto optio explicabo autem in incidunt.Sit, ducimus numquam expedita quos dolore quia cupiditate corporis suscipit commodi temporibus quidem aut vero eos iusto optio explicabo autem in incidunt.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, ducimus numquam expedita quos dolore quia cupiditate corporis suscipit commodi temporibus quidem aut vero eos iusto optio explicabo autem in incidunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, veritatis harum velit modi enim dolores rerum tenetur repellendus eius qui facilis ea itaque tempora et. Similique qui dolorum sequi doloribus.</p>
+<br>
+<hr>
+<h3><em>Projects</em></h3>
+<ul>
+<li>Lorem ipsum.</li>
+<li>Lorem ipsum.</li>
+<li>Lorem ipsum</li>
+<li>Lorem ipsum</li>
+<li>Lorem ipsum</li>
+</ul>
+<hr>
+<h3><em>Hobbies</em></h3>
+<h4>Photography 📷</h4>
+<img width="750" height= "400" src="CVimages/moon.jpg" alt="Example Photograph">
+<br>
+<a href="https://www.eyeem.com/u/daridars">Visit my photography page!</a><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolores vitae cupiditate debitis magnam nam nesciunt at quae aspernatur. Quae natus voluptates hic blanditiis veniam consectetur, rerum necessitatibus a ipsam!</p>
+<p>Dolores vitae cupiditate debitis magnam nam nesciunt at quae aspernatur. Quae natus voluptates hic blanditiis veniam consectetur, rerum necessitatibus a ipsam!</p>
+
+<h4>Travel ✈</h4>
+Check out my travel destinations!
+<!--Trying out geochart-->
+<div id="regions_div" style="width: 900px; height: 500px;"></div>
+<!--Trying out geochart-->
+
+<h4>Reading 📖</h4> 
+If you are interested, you can explore the books I have read <a href = https://www.goodreads.com/user/show/22900838-darina>here.</a>
+<hr>
+<h4>Reaching me 🌎</h4>
+Find my further contact details <a href= "contact.html">here.  </a>
+
+</body>
+</html>
